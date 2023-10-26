@@ -9,16 +9,24 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<a href="" class="logo">LOGO</a>
+		<div class="spazio_sup"></div>
+		<header class="header cf">
+			<a href="" class="header_logo">LOGO</a>
+			<a href="" class="header_icon">
+				<span class="header_icon_span"></span>
+				<span class="header_icon_span"></span>
+				<span class="header_icon_span_end"></span>
+			</a>
+			<ul class="header_menu animate">
+				<li class="header_menu_item"><a href="">Home</a></li>
+				<li class="header_menu_item"><a href="">About</a></li>
+				<li class="header_menu_item"><a href="">Servizi</a></li>
+				<li class="header_menu_item"><a href="./contatti.html">Contatti</a></li>
+			</ul>
+		</header>
 
-		<ul class="menu">
-			<li><a href="">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Servizi</a></li>
-			<li><a href="">Contatti</a></li>
-		</ul>
 		<div class="sfondo">
-			<h1 class="hero_title text_title">SINESTESIA</h1>
+			<h1 class="title text_title">SINESTESIA</h1>
 		</div>
 		<div class="content">
 			<p>
@@ -43,9 +51,7 @@
 		</div>
 
 		<!-- /////COVER////// -->
-<div class="cover">
-	COVER
-</div>
+		<div class="cover">COVER</div>
 
 		<!-- ///COLONNE SOTTO///// -->
 
@@ -66,5 +72,14 @@
 				</p>
 			</div>
 		</div>
+		<script>
+			let icon = document.querySelector(".header_icon");
+			let menu = document.querySelector(".header_menu");
+
+			icon.addEventListener("click", (e) => {
+				menu.classList.toggle("open");
+				e.preventDefault();
+			});
+		</script>
 	</body>
 </html>
