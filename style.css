@@ -1,0 +1,136 @@
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1rem;
+}
+
+a {
+	color: coral;
+}
+
+p {
+	line-height: 1.3;
+}
+cite {
+	display: block;
+	font-size: 1.2rem;
+	padding: 2% 1%;
+	text-align: center;
+}
+.text_title {
+	font-size: 4rem;
+	color: brown;
+}
+
+.logo {
+
+	top: 0;
+	left: 0;
+	padding: 5%;
+	display: block;
+	position: fixed;
+}
+
+.menu {
+	bottom: 0;
+	left: 0;
+	padding: 5%;
+	display: block;
+	position: fixed;
+}
+
+.sfondo {
+	height: 80vh;
+	width: 100%;
+	position: relative;
+	background: url(./img/Sfondo\ 2.jpg) no-repeat center center;
+	z-index: -1;
+	background-size: 70%; /* DIMENSIONE IMMAGINE - SE IN % E'= RESPONSIVE*/
+}
+@media (max-width: 768px) {
+	.sfondo {
+		background-size: 120%;
+		height: 65vh;
+	}
+}
+
+.hero_title {
+	position: absolute;
+	bottom: 50%;
+	right: 2%;
+}
+@media (max-width: 768px) {
+	.text_title {
+		font-size: 2rem;
+	}
+}
+
+.content {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 2%;
+}
+@media (max-width: 768px) {
+	.content {
+		max-width: 90%;
+	}
+}
+
+
+/* /////// GRID/////// */
+
+.grid {
+	display: flex;
+	flex-wrap: wrap; /*flex-wrap: wrap; TI PERMETTER DI ANDARE A CAPO IN AUTOMOATICO. SOLITAMENTE FLEX è INLINE*/
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.col-50 {
+	width: 50%;
+	padding: 5%;
+}
+.col-33 {
+	width: 33%;
+	padding: 5%;
+}
+@media (max-width: 768px) {
+	.col-50,
+	.col-33 {
+		width: 100%;
+	}
+}
+
+
+
+/*///////// HELPERS  /////////*/
+
+.img-res {
+	width: 100%;
+	height: auto;
+}
+.mc-1 {
+	margin-top: 30%;
+}
+
+/*///////// COVER  /////////*/
+
+.cover {
+	height: 80vh;
+	width: 100%;
+	padding: 4%;
+	background: url(./img/interior.jpg) no-repeat center center;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: aliceblue;
+}
+
+
+
+
