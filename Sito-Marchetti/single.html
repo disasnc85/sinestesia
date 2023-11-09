@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<!--flickity Touch, responsive, flickable galleries **** Creazione Carosello -->
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+		</style>
+
+		<title>Single</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="../img/Corso Biblico.png" alt="" />
+			</div>
+			<ul class="menu">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Single</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+			<div class="cta">
+				<a href="" class="button">Contatti</a>
+			</div>
+			<div class="icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="hero hero--single">
+			<div class="hero__content">
+				<p class="intro-text">Intro Text</p>
+				<h1 class="big-text">Titolo della mia Pagina Web</h1>
+				<a href="" class="button">Discover More</a>
+			</div>
+			<video autoplay muted loop class="video-libro video--single">
+				<source src="../video/Video-libro.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<div class="content">
+			<h3 class="normal-text">Lorem</h3>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vero dolor optio officiis
+				suscipit quibusdam numquam recusandae sunt. Molestiae deserunt vitae odit rem expedita
+				neque. Quibusdam maxime porro veniam temporibus?
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vero dolor optio officiis
+				suscipit quibusdam numquam recusandae sunt. Molestiae deserunt vitae odit rem expedita
+				neque. Quibusdam maxime porro veniam temporibus?
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vero dolor optio officiis
+				suscipit quibusdam numquam recusandae sunt. Molestiae deserunt vitae odit rem expedita
+				neque. Quibusdam maxime porro veniam temporibus?
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vero dolor optio officiis
+				suscipit quibusdam numquam recusandae sunt. Molestiae deserunt vitae odit rem expedita
+				neque. Quibusdam maxime porro veniam temporibus?
+			</p>
+		</div>
+
+		<div class="poster mt-150">
+			<div class="poster__content">
+				<h3 class="big-text">Titolo</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut tempore corporis
+					reprehenderit ab! Deserunt repellat hic sit minus possimus facilis neque quisquam
+					perspiciatis. Blanditiis ea eos aperiam ex a?
+				</p>
+				<a href="" class="button">Call to action</a>
+			</div>
+			<div class="poster__img">
+				<img src="../img/matitia.jpg" alt="" />
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="grid">
+				<div class="col">
+					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
+					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="col">
+					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
+					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="col">
+					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
+					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="col">
+					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
+					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			function menu() {
+				let menu = document.querySelector(".menu");
+				menu.classList.toggle("open");
+			}
+
+			let icon = document.querySelector(".icon");
+			icon.addEventListener("click", menu);
+		</script>
+	</body>
+</html>

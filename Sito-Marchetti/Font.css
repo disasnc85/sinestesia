@@ -1,0 +1,65 @@
+/*////////
+ Base Style
+ /////////*/
+/*In questa sezione impostiamo i font di Default. 
+In primis siamo andati su google fonts e abbiamo preso 
+il font desiderato.*/
+body {
+	font-family: "Inter", sans-serif;
+}
+p {
+	line-height: 28px;
+	color: #666;
+	font-weight: 300px;
+}
+
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	color: rgb(0, 0, 0);
+	padding-bottom: 30px;
+}
+
+.big-text {
+	font-size: 70px;
+	font-weight: 900; /* il 900 viene preso dai font di Google font che abbiamo scaricato. 
+	Dato che abbiamo scaricato anche il 900 viene utilizzato*/
+}
+@media (max-width: 768px) {
+	.big-text {
+		font-size: 40px;
+		font-weight: 900;
+	}
+}
+
+.med-text {
+	font-size: 40px;
+}
+
+.normal-text {
+	font-size: 20px;
+}
+.small.-text {
+	font-size: 16px;
+}
+.intro-text {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.button {
+	padding: 18px 28px;
+	background-color: #316bff;
+	color: #ffff;
+	display: inline-block; /*mantiene il pulsante interno al suo blocco. Applica il padding a tutto il link*/
+	border-radius: 4px;
+}
+
+
