@@ -101,6 +101,7 @@ cambia il valore superiore o inferiore del nero*/
 	display: flex;
 	width: 100%;
 	align-items: center;
+	/* -----Commentato il background per elaborare meglio il video superiore----*/
 	/* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
 		url(../img/libro.png) no-repeat center center;
 	background-size: cover; */
@@ -140,22 +141,26 @@ Successivamente creiamo una patina opaca per risaltare i testi con backgroung e 
 
 .video-libro {
 	position: absolute;
-	top: 0;
+	top: -100px;
 	left: 0;
 	min-width: 100%;
 	min-height: 100%;
 	z-index: 0;
 }
-.video--single{
+.video--single {
 	top: -280px;
 }
 
-
-.hero--single{
+.hero--single {
 	height: 450px;
 	text-align: center;
 }
 
+@media (max-width:768px){
+	.video--single, .video-libro {
+		left: -100px;
+	}
+}
 
 /* **** POSTER **** */
 .poster {
@@ -311,16 +316,8 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 .content {
 	max-width: 900px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding: 50px 20px;
 }
-
-
-
-
-
-
-
-
 
 /* ****HELPERS***** */
 .mt-50 {
