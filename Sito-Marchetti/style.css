@@ -7,8 +7,12 @@
 	--moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-/* *** Header *** */
+/* ///  */
+:root {
+	scroll-behavior: smooth;
+}
 
+/* /// HEADER /// */
 .header {
 	width: 100%;
 	position: fixed;
@@ -46,8 +50,11 @@
 	padding: 15px;
 	display: block;
 }
+.menu li:hover {
+	background-color: #316bff;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 	.cta {
 		display: none;
 	}
@@ -60,12 +67,12 @@
 		top: 0;
 		height: 100vh;
 		background-color: #000;
-		padding-top: 80px;
+		padding-top: 100px;
 	}
 	.menu li {
 		display: block;
 		padding: 15px 30px;
-		font-size: 25px;
+		font-size: 20px;
 	}
 	.icon {
 		display: block;
@@ -87,15 +94,14 @@
 	}
 }
 
-/* **** HERO***** */
-
-/*//////// DOPPIO SFONDO PER RISALTARE I TESTI////// */
-/* 0deg(indica l'inclinazione della sfumatura, in questo caso verticale). 
-La prima () è il primo colore la seconda () è il secondo colore. 
-In questa formula che vediamo in base a come aumentiamo l'ultimo valore nella parentesi 
-cambia il valore superiore o inferiore del nero*/
+/* /// HERO /// */
 
 .hero {
+	/* *** DOPPIO SFONDO PER RISALTARE I TESTI *** */
+	/* *** 0deg(indica l'inclinazione della sfumatura, in questo caso verticale). 
+	La prima () è il primo colore la seconda () è il secondo colore. 
+	In questa formula che vediamo in base a come aumentiamo l'ultimo valore nella parentesi 
+	cambia il valore superiore o inferiore del nero *** */
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -109,11 +115,10 @@ cambia il valore superiore o inferiore del nero*/
 	overflow: hidden;
 }
 
-/*  di seguito creiamo un lemento html dal css utilizzabdo :after. 
-Creera un elemento dopo l'elemento scelto. In questo caso ".hero".
-Successivamente creiamo una patina opaca per risaltare i testi con backgroung e opacity*/
-
 .hero::after {
+	/*  di seguito creiamo un elemento html dal css utilizzabdo :after. 
+	Creera un elemento dopo l'elemento scelto. In questo caso ".hero".
+	Successivamente creiamo una patina opaca per risaltare i testi con backgroung e opacity*/
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -156,13 +161,19 @@ Successivamente creiamo una patina opaca per risaltare i testi con backgroung e 
 	text-align: center;
 }
 
-@media (max-width:768px){
-	.video--single, .video-libro {
+@media (max-width: 915px) {
+	.video--single,
+	.video-libro {
 		left: -100px;
 	}
 }
+@media (max-height: 450px) {
+	.hero__content {
+		top: 30px;
+	}
+}
 
-/* **** POSTER **** */
+/* /// POSTER /// */
 .poster {
 	display: flex;
 	height: 100vh;
@@ -173,12 +184,13 @@ Successivamente creiamo una patina opaca per risaltare i testi con backgroung e 
 	width: 65%;
 }
 
-/*  PER FAR RIENTRARE L'IMMAGINE DENRO IL SUO DIV 
-VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 .poster__img img {
+	/* *** PER FAR RIENTRARE L'IMMAGINE DENRO IL SUO DIV 
+	VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	object-fit: cover;
 	width: 100%;
 	height: 100vh;
+	box-shadow: 0px 0px 20px 5px rgb(72, 65, 65);
 }
 
 .poster__content {
@@ -186,7 +198,7 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	padding: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 	.poster {
 		flex-wrap: wrap;
 		height: auto;
@@ -201,7 +213,7 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	}
 }
 
-/* ***BG Cover*** */
+/* /// COVER /// */
 .bg-cover {
 	display: flex;
 	padding: 100px 0;
@@ -228,7 +240,7 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 	.bg-cover {
 		flex-wrap: wrap;
 		height: auto;
@@ -239,8 +251,7 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	}
 }
 
-/* **** GRID **** */
-
+/* /// GRID /// */
 .grid {
 	display: flex;
 	max-width: 1350px;
@@ -251,35 +262,44 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 	.grid {
 		flex-wrap: wrap;
 	}
 }
 
-/* **** CAROSELLO **** */
-
+/* /// CAROSELLO /// */
 .main-carousel {
 	padding: 40px 0;
 }
 .carousel-cell {
 	width: 350px;
 	height: 350px;
-	margin-right: 40px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .carousel-cell__content {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	background-color: aquamarine;
 	border-radius: 100%;
-	line-height: 350px; /*centra il testo al cerchio verticalmente*/
-	text-align: center;
-	margin-right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* *** per centrare il testo al cerchio non utilizzando
+	 flex e con il width e height al 100% fare come segue*/
+	/* text-align: center;
+	 line-height: 350px;*/
+	/* margin-right: 40px; */
+	box-shadow: 0px 0px 15px 0.3px rgb(72, 65, 65);
+	right: 0;
 }
 
-/* **** PANEL BLUE **** */
-
+/* /// PANEL BLUE /// */
 .panel-blue {
 	background: #4bb1e9;
 	padding: 100px 30px;
@@ -301,8 +321,7 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	margin-bottom: 40px;
 }
 
-/* **** FOOTER **** */
-
+/* /// FOOTER /// */
 .footer {
 	background: #010e30;
 	padding: 150px 0;
@@ -312,14 +331,14 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 	padding: 0 20px;
 }
 
-/* *** ! CONTENT *** */
+/* /// ! CONTENT /// */
 .content {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 50px 20px;
 }
 
-/* ****HELPERS***** */
+/* /// HELPERS /// */
 .mt-50 {
 	margin-top: 50px;
 }
@@ -332,4 +351,37 @@ VERRA USATA LA SEGUENTE PROPRIETA object-fit */
 
 .t-bianco {
 	color: #ffff;
+}
+
+@media (max-width: 915px) {
+	.mt-mobile-0 {
+		margin-top: 0;
+	}
+	.mb-mobile-0 {
+		margin-bottom: 0;
+	}
+}
+
+/* /// TORNA SU /// */
+.torna-su {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: block;
+}
+
+.torna-su img {
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 50px;
+	padding: 0px;
+	width: 50px;
+	border-radius: 50%;
+	border: 2px solid #b4cce8;
+	filter: brightness(50%) saturate(100%);
+}
+
+.torna-su:hover {
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.3);
 }

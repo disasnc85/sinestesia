@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--flickity Touch, responsive, flickable galleries **** Creazione Carosello -->
+		<!-- /// CREAZIONE CAROSELLO - CDN - flickity Touch, responsive, flickable galleries /// -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
@@ -18,6 +18,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<script src="https://unpkg.com/scrollreveal"></script>
+
 		<link rel="stylesheet" href="style.css" />
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
@@ -46,9 +48,9 @@
 		</div>
 
 		<div class="hero">
-			<div class="hero__content">
+			<div class="hero__content animate">
 				<p class="intro-text">Intro Text</p>
-				<h1 class="big-text">Titolo della mia Pagina Web</h1>
+				<h1 class="big-text t">Titolo della mia Pagina Web</h1>
 				<a href="" class="button">Discover More</a>
 			</div>
 			<video autoplay muted loop class="video-libro">
@@ -57,11 +59,11 @@
 		</div>
 
 		<div class="poster mt-150">
-			<div class="poster__img">
+			<div class="poster__img animate">
 				<img src="../img/matitia.jpg" alt="" />
 			</div>
-			<div class="poster__content">
-				<h3 class="big-text">Titolo</h3>
+			<div class="poster__content animate">
+				<h3 class="big-text">Titolo della mia Poster</h3>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut tempore corporis
 					reprehenderit ab! Deserunt repellat hic sit minus possimus facilis neque quisquam
@@ -72,10 +74,10 @@
 		</div>
 
 		<div class="bg-cover mt-150">
-			<div class="bg-cover__title">
-				<h3 class="big-text t-bianco">Titolo cover</h3>
+			<div class="bg-cover__title animate">
+				<h3 class="big-text t-bianco">Titolo della mia Cover</h3>
 			</div>
-			<div class="bg-cover__text">
+			<div class="bg-cover__text animate">
 				<h4>Titolo paragrafo</h4>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi omnis aperiam debitis
@@ -100,40 +102,47 @@
 		</div>
 
 		<div class="grid mt-150">
-			<div class="col">
-				<h3 class="big-text">Il mio titolo</h3>
+			<div class="col animate">
+				<h3 class="big-text">Titolo del mio carosello</h3>
 			</div>
-			<div class="col">
-				<p class="mt-100">
+			<div class="col animate">
+				<p class="mt-100 mt-mobile-0">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae voluptatum
 					quis quod in, possimus magni omnis assumenda suscipit reprehenderit veritatis consequatur,
 					expedita, cum perspiciatis quia. Adipisci doloribus iusto deserunt.
 				</p>
 			</div>
 		</div>
+
 		<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 			<div class="carousel-cell">
-				<div class="carousel-cell__content">text</div>
+				<div class="carousel-cell__content zoom">text</div>
+			</div>
+			<div class="carousel-cell">
+				<div class="carousel-cell__content zoom">text</div>
+			</div>
+			<div class="carousel-cell">
+				<div class="carousel-cell__content zoom">text</div>
 			</div>
 		</div>
 		<div class="poster mt-150">
-			<div class="poster__content">
-				<h3 class="big-text">Titolo</h3>
+			<div class="poster__content animate">
+				<h3 class="big-text">Titolo della mia Poster</h3>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut tempore corporis
 					reprehenderit ab! Deserunt repellat hic sit minus possimus facilis neque quisquam
@@ -141,7 +150,7 @@
 				</p>
 				<a href="" class="button">Call to action</a>
 			</div>
-			<div class="poster__img">
+			<div class="poster__img animate">
 				<img src="../img/matitia.jpg" alt="" />
 			</div>
 		</div>
@@ -149,20 +158,20 @@
 		<div class="panel-blue mt-150">
 			<div class="grid">
 				<div class="col panel-blue__dots">
-					<div class="dot">text</div>
-					<div class="dot">text</div>
-					<div class="dot">ciao</div>
-					<div class="dot">text</div>
+					<div class="dot zoom">text</div>
+					<div class="dot zoom">text</div>
+					<div class="dot zoom">ciao</div>
+					<div class="dot zoom">text</div>
 				</div>
 
 				<div class="col panel-blue__text">
 					<div class="grid">
-						<div class="col">
+						<div class="col animate">
 							<h3 class="big-text t-bianco">Lorem Ipsum</h3>
 						</div>
 
-						<div class="col">
-							<p class="t-bianco mt-100">
+						<div class="col animate">
+							<p class="t-bianco mt-100 mt-mobile-0">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, distinctio aut!
 								Rerum accusamus fugiat mollitia. Facere quisquam rerum porro, odit, nemo dolorum
 								distinctio officiis, dignissimos ipsa aut ad vel debitis!
@@ -172,33 +181,41 @@
 				</div>
 			</div>
 		</div>
+
 		<footer class="footer">
 			<div class="grid">
-				<div class="col">
+				<div class="col animate">
 					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
 					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
-				<div class="col">
+				<div class="col animate">
 					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
 					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
-				<div class="col">
+				<div class="col animate">
 					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
 					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
-				<div class="col">
+				<div class="col animate">
 					<h4 class="t-bianco normal-text">lorem Ipsum</h4>
 					<p class="t-bianco">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 			</div>
 		</footer>
-		<!--flickity Touch, responsive, flickable galleries **** Creazione Carosello -->
+
+		<div class="torna-su">
+			<a href="#" id="tornaSuBtn">
+				<img src="../img/freccia.png" />
+			</a>
+		</div>
+		<!-- /// CREAZIONE CAROSELLO - JS - flickity Touch, responsive, flickable galleries /// -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
 			integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
+		<!-- /// MENU MOBILE /// -->
 		<script>
 			function menu() {
 				let menu = document.querySelector(".menu");
@@ -207,6 +224,40 @@
 
 			let icon = document.querySelector(".icon");
 			icon.addEventListener("click", menu);
+		</script>
+		<!-- /// ANIMAZIONI /// -->
+		<script>
+			ScrollReveal().reveal(".animate", {
+				distance: "100px",
+				duration: 1500,
+				easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
+				interval: 600,
+			});
+			ScrollReveal().reveal(".zoom", {
+				duration: 1500,
+				easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
+				interval: 200,
+				scale: 0.65,
+				mobile: false,
+			});
+		</script>
+		<!-- /// FRECCIA TORNA SU /// -->
+		<script>
+			// Rileva lo scroll della finestra
+			window.onscroll = function () {
+				// Verifica se si è scesi di almeno 300 pixel
+				if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+					document.getElementById("tornaSuBtn").style.display = "block";
+				} else {
+					document.getElementById("tornaSuBtn").style.display = "none";
+				}
+			};
+
+			// Gestisce il clic sul tasto "Torna Su"
+			document.getElementById("tornaSuBtn").onclick = function () {
+				// Torna all'inizio della pagina con un'animazione fluida
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			};
 		</script>
 	</body>
 </html>
