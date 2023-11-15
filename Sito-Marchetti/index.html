@@ -233,15 +233,32 @@
 				distance: "100px",
 				duration: 1500,
 				easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
-				interval: 600,
+				interval: 500,
 			});
-			ScrollReveal().reveal(".zoom", {
-				duration: 1500,
-				easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
-				interval: 200,
-				scale: 0.65,
-				mobile: false,
-			});
+
+			/// DI SEGUITO QUESTA FUNIONE USA UNA MEDIA QUERY PER USARE LO ZOOM ///
+			function myFunction(x) {
+				if (x.matches) {
+					// If media query matches
+					ScrollReveal().reveal(".zoom", {
+						duration: 1500,
+						easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
+						interval: 100,
+						scale: 0.65,
+						mobile: false,
+					});
+				} else {
+					ScrollReveal().reveal(".zoom", {
+						duration: 1500,
+						easing: "cubic-bezier(0.075, 0.61, 0.355, 1)",
+						interval: 100,
+						scale: 0.65,
+					});
+				}
+			}
+			let x = window.matchMedia("(max-width: 700px)");
+			myFunction(x); // Call listener function at run time
+			x.addListener(myFunction); // Attach listener function on state changes
 		</script>
 		<!-- /// FRECCIA TORNA SU /// -->
 		<script>

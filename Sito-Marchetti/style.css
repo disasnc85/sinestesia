@@ -295,7 +295,7 @@
 	/* text-align: center;
 	 line-height: 350px;*/
 	/* margin-right: 40px; */
-	box-shadow: 0px 0px 15px 0.3px rgb(72, 65, 65);
+	box-shadow: 0px 0px 17px 0.2px rgb(72, 65, 65);
 	right: 0;
 }
 
@@ -319,9 +319,21 @@
 	line-height: 250px;
 	margin-right: 40px;
 	margin-bottom: 40px;
+	box-shadow: 0px 0px 20px 0.2px rgb(72, 65, 65);
+}
+
+@media (min-width: 1210px) and (max-width: 1371px) {
+	.panel-blue {
+		padding: 100px 0px;
+	}
+	.dot {
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
 }
 
 /* /// FOOTER /// */
+
 .footer {
 	background: #010e30;
 	padding: 150px 0;
@@ -368,7 +380,7 @@
 	bottom: 20px;
 	right: 20px;
 }
-.torna-su a{
+.torna-su a {
 	display: none;
 }
 
@@ -387,4 +399,3 @@
 	transition: all 0.3s ease-in-out;
 	transform: scale(1.3);
 }
-
