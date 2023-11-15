@@ -367,7 +367,9 @@
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	display: block;
+}
+.torna-su a{
+	display: none;
 }
 
 .torna-su img {
@@ -385,3 +387,4 @@
 	transition: all 0.3s ease-in-out;
 	transform: scale(1.3);
 }
+

@@ -208,6 +208,7 @@
 				<img src="../img/freccia.png" />
 			</a>
 		</div>
+
 		<!-- /// CREAZIONE CAROSELLO - JS - flickity Touch, responsive, flickable galleries /// -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
@@ -220,6 +221,7 @@
 			function menu() {
 				let menu = document.querySelector(".menu");
 				menu.classList.toggle("open");
+				preventDefault();
 			}
 
 			let icon = document.querySelector(".icon");
