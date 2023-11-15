@@ -322,8 +322,18 @@
 	margin-bottom: 40px;
 	box-shadow: 0px 0px 20px 0.2px rgb(72, 65, 65);
 }
-
-@media (min-width: 1110px) and (max-width: 1371px) {
+/* *** Questa media serve, nei Tablet piu piccoli per far scendere il testo
+e mantenere i quattro cerchi affiancati (un cerchio si metteva a fianco)*** */
+@media (max-width: 1110px) {
+	.panel-blue > .grid {
+		flex-wrap: wrap;
+	}
+	.panel-blue__dots{
+		max-width: 780px;
+	}
+}
+/* *** Questa media serve, nei Tablet a tenere i cerchi affiancati *** */
+@media (min-width: 1111px) and (max-width: 1371px) {
 	.panel-blue {
 		padding: 100px 0px;
 	}
