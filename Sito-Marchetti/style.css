@@ -304,6 +304,7 @@
 	background: #4bb1e9;
 	padding: 100px 30px;
 }
+
 .panel-blue__text {
 	display: flex;
 	align-items: center;
@@ -322,13 +323,19 @@
 	box-shadow: 0px 0px 20px 0.2px rgb(72, 65, 65);
 }
 
-@media (min-width: 1210px) and (max-width: 1371px) {
+@media (min-width: 1110px) and (max-width: 1371px) {
 	.panel-blue {
 		padding: 100px 0px;
+	}
+	.panel-blue > .grid {
+		padding: 0 10px;
 	}
 	.dot {
 		margin-right: 15px;
 		margin-bottom: 15px;
+	}
+	.grid > .col.panel-blue__dots {
+		padding: 0;
 	}
 }
 
